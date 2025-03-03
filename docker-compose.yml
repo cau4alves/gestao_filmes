@@ -1,0 +1,10 @@
+services:
+  postgres:
+    container_name: gestao_filmes_docker
+    image: postgres
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRES_USERNAME = postgres
+      - POSTGRES_PASSWORD = root
+      - POSTGRES_DB = teste
