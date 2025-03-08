@@ -30,7 +30,7 @@ public class FilmModel {
     private CinemaModel cinemaModel;
 
     @Column(name = "cinema_id")
-    private UUID cinemaId;
+    private Integer cinemaId;
 
     @Column(name = "nro_sala")
     private Integer nroSala;

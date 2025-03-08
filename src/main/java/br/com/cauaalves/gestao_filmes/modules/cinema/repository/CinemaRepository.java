@@ -6,6 +6,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import java.util.Optional;
 import java.util.UUID;
 
-public interface CinemaRepository extends JpaRepository<CinemaModel, UUID> {
+public interface CinemaRepository extends JpaRepository<CinemaModel, Integer> {
     Optional<CinemaModel> findByUsername(String username);
 }
