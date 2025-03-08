@@ -28,7 +28,7 @@ public class CinemaModel {
     @Pattern(regexp = "\\S+", message = "O campo [username] não pode conter espaços")
     private String username;
 
-    @Length(min = 8, max = 100, message = "A senha deve conter 8 à 100 caracteres")
+    @Length(min = 8, max = 100, message = "A senha deve conter entre 8 à 100 caracteres")
     private String password;
 
     @CreationTimestamp

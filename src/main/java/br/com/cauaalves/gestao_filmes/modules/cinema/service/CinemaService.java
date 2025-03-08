@@ -1,6 +1,6 @@
 package br.com.cauaalves.gestao_filmes.modules.cinema.service;
 
-import br.com.cauaalves.gestao_filmes.Exceptions.UsernameFound;
+import br.com.cauaalves.gestao_filmes.exceptions.UsernameFound;
 import br.com.cauaalves.gestao_filmes.modules.cinema.model.CinemaModel;
 import br.com.cauaalves.gestao_filmes.modules.cinema.repository.CinemaRepository;
 import org.springframework.beans.factory.annotation.Autowired;

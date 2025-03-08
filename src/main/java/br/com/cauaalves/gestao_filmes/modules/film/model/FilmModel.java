@@ -16,12 +16,12 @@ import java.util.UUID;
 public class FilmModel {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.UUID)
-    private UUID id;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer id;
 
     private String name;
 
-    private String duration;
+    private LocalTime duration;
 
     private String synopsis;
 
@@ -29,14 +29,17 @@ public class FilmModel {
     @JoinColumn(name = "cinema_id", insertable = false, updatable = false)
     private CinemaModel cinemaModel;
 
-    @NotNull
     @Column(name = "cinema_id")
     private UUID cinemaId;
 
     @Column(name = "nro_sala")
     private Integer nroSala;
 
-    private String horario;
+    @Column(name = "start_session")
+    private LocalTime startSession;
+
+    @Column(name = "end_session")
+    private LocalTime endSession;
 
     @CreationTimestamp
     @Column(name = "created_at")
