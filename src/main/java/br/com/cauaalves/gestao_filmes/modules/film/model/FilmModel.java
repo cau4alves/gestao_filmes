@@ -16,8 +16,8 @@ import java.util.UUID;
 public class FilmModel {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;
+    @GeneratedValue(strategy = GenerationType.UUID)
+    private UUID id;
 
     private String name;
 
@@ -30,7 +30,7 @@ public class FilmModel {
     private CinemaModel cinemaModel;
 
     @Column(name = "cinema_id")
-    private Integer cinemaId;
+    private UUID cinemaId;
 
     @Column(name = "nro_sala")
     private Integer nroSala;
